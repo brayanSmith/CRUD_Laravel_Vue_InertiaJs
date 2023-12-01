@@ -38,7 +38,7 @@ Route::middleware('auth')->group(function () {
     //vamos a traer nuestras rutas de departamentos, empleados, graficas y reportes
     Route::resource('departments', DepartmentController::class);
     Route::resource('employees', EmployeeController::class);
-    Route::get('graphic',[EmployeeController::class,'EmployeeByDepartment'])->name('grapic');
+    Route::get('graphic',[EmployeeController::class,'EmployeeByDepartment'])->name('graphic');
     Route::get('reports',[EmployeeController::class,'reports'])->name('reports');
 });
 

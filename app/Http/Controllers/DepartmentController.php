@@ -24,7 +24,7 @@ class DepartmentController extends Controller
     public function create()
     {
         //al momento de darle crear me direccionara a la carpeta Departments/Index
-        return Inertia::render('Departments/Index');
+        return Inertia::render('Departments/Create');
     }
 
     /**
